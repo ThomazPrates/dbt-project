@@ -1,0 +1,43 @@
+version: 2
+
+sources:
+  - name: ambiente_br
+    description: This is a replica of the Postgres database used by our app
+    tables:
+      - name: usuario
+
+      - name: ced
+        description: Dados dos CEDS.
+
+      - name: endereco
+        description: Endereco dos Alunos.
+
+      - name: questionario
+        description: Perguntas dos questionarios.
+
+      - name: questionariousuario
+        description: Relacao entre perguntas, respostas e Alunos do SGA do Questionario.
+
+      - name: resposta
+        description: Respostas das perguntas relacionadas ao Questionario.
+  
+      - name: mdl_course
+        description: Nomes das Formacoes Recode BR.
+
+      - name: mdl_course_categories
+        description: Nome das categorias das formacoes da Recode. 
+
+      - name: mdl_course_modules
+        description: Relacao dos alunos com a conclusao de cada curso.
+
+      - name: mdl_course_modules_completion
+        description: informacoes sobre as conclusoes de cada curso.
+
+      - name: mdl_course_sections
+        description: Nome dos cursos da Recode BR.
+
+      - name: mdl_enrol
+        description: Relacao das formacoes com a matricula.
+
+      - name: mdl_user_enrolments
+        description: relacao entre o usuario e a matricula de uma formacao. 
