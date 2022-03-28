@@ -8,6 +8,7 @@
                 /* Chave Estrangeira */
                 , course as formacao_fk
                 , section as curso_fk
+                , module as modulos
 
 
  
